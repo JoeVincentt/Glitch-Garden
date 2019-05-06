@@ -57,7 +57,13 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Attacker.cs" />
      <Compile Include="Assets\Scripts\AttackerSpawner.cs" />
+     <Compile Include="Assets\Scripts\DamageDealer.cs" />
+     <Compile Include="Assets\Scripts\DefenderSpawner.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\LevelLoader.cs" />
+     <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\Shooter.cs" />
+     <Compile Include="Assets\Scripts\Shredder.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/mac/Programming/Unity 2D/Glitch Garden/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
