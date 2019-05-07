@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2925740754456373462}
   - component: {fileID: 1001875861}
-  - component: {fileID: 1001875860}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -26,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2671908316583396562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: -0.27, z: 0}
+  m_LocalPosition: {x: -0.1, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3189917919446635613}
@@ -82,21 +81,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1001875860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2671908316583396562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8805180640584409192cf71a9a68d911, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 907583403972566173, guid: ba781216a1cbf495eaf8722b52b58c66,
-    type: 3}
-  gun: {fileID: 8256754998234643601}
 --- !u!1 &6359906176906072482
 GameObject:
   m_ObjectHideFlags: 0

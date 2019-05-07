@@ -274,7 +274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438838286521716482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05790001, y: 0.09, z: 0}
+  m_LocalPosition: {x: -0.063, y: 0.09, z: 0}
   m_LocalScale: {x: 0.16104957, y: 1.6028746, z: 0.99}
   m_Children: []
   m_Father: {fileID: 438838286293462117}
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c3a1f6ebef841d7b890e17a9d04b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderPrefab: {fileID: 9150492540646585441, guid: a2cea444657224051b3097d1ed54c7bb,
+  defenderPrefab: {fileID: 8314929656075331851, guid: a2cea444657224051b3097d1ed54c7bb,
     type: 3}
 --- !u!212 &438838286521716495
 SpriteRenderer:
