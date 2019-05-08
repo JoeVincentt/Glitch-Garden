@@ -18,20 +18,33 @@ public class LevelLoader : MonoBehaviour
         }
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
     IEnumerator WaitForTime()
     {
         yield return new WaitForSeconds(timeToWait);
         LoadNextScene();
     }
 
+    public void RestartScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+    public void LoadMainMenuScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Start Screen");
+    }
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadYouLoseScreen()
     {
-
+        SceneManager.LoadScene("Lose Screen");
     }
 }
