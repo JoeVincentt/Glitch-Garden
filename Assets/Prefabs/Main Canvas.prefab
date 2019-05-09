@@ -424,7 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f179f4b02b8e64045a4ab06120c0caab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: 500
+  stars: 100
 --- !u!1 &1831217324
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5281acb94355b4203924220ba6c6c2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseLives: 100
+  baseLives: 3
   damageLife: 1
 --- !u!1001 &5204236857112403876
 PrefabInstance:

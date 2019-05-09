@@ -36,6 +36,10 @@ public class DefenderSpawner : MonoBehaviour
     private void AttemptToPlaceDefenderAt(Vector2 gridPos)
     {
         var StarDisplay = FindObjectOfType<StarDisplay>();
+        if (!defender)
+        {
+            return;
+        }
         int defenderCost = defender.GetStarCost();
 
         if (StarDisplay.HaveEnoughStars(defenderCost))
@@ -56,8 +60,15 @@ public class DefenderSpawner : MonoBehaviour
 
     private Vector2 SnapToGrid(Vector2 rawWorldPos)
     {
-        float newX = Mathf.RoundToInt(rawWorldPos.x);
-        float newY = Mathf.RoundToInt(rawWorldPos.y);
+        float newX = Mathf.Floor(Mathf.RoundToInt(rawWorldPos.x));
+        float newY = Mathf.Floor(Mathf.RoundToInt(rawWorldPos.y));
+
+        if (newY < 1)
+        {
+            newY = 1;
+        }
+
+
         return new Vector2(newX, newY);
     }
     private void SpawnDefender(Vector2 gridPos)
