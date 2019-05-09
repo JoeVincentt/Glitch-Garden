@@ -6,18 +6,26 @@ using TMPro;
 public class LivesDisplay : MonoBehaviour
 {
 
-    [SerializeField] int lives = 5;
+    [SerializeField] float baseLives = 3f;
     [SerializeField] int damageLife = 1;
+    float lives;
     TextMeshProUGUI livesText;
 
     void Start()
     {
+        lives = baseLives - PlayerPrefsController.GetDifficulty();
         livesText = GetComponent<TextMeshProUGUI>();
         UpdateDisplay();
+
     }
 
     private void UpdateDisplay()
     {
+        if (lives <= 0)
+        {
+            livesText.text = "0";
+            return;
+        }
         livesText.text = lives.ToString();
     }
 

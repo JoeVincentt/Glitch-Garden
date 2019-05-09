@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 488709439}
   - component: {fileID: 488709440}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Timer Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed5003853f29240e08d91234454d2c89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelTime: 3
+  levelTime: 30
 --- !u!1 &1110351413
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5281acb94355b4203924220ba6c6c2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 100
+  baseLives: 100
   damageLife: 1
 --- !u!1001 &5204236857112403876
 PrefabInstance:
@@ -1086,8 +1086,7 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1079058875106335633, guid: 7cd87dc27920c4e53b817fc05de71288, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cd87dc27920c4e53b817fc05de71288, type: 3}
 --- !u!224 &5599195781574101443 stripped
 RectTransform:
